@@ -1,11 +1,28 @@
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
 
 import { styles } from "../style"
 
 import { ComputersCanvas } from "./canvas"
 
 const Hero = () => {
-  const mediaQuery = window.matchMedia("(max-width: 500px)")
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)")
+
+    setIsMobile(mediaQuery.matches)
+
+    const handleMediaQueryChange = (e: any) => {
+      setIsMobile(e.matches)
+    }
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange)
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange)
+    }
+  }, [])
 
   return (
     <section className="relative w-full h-screen mx-auto">
@@ -30,8 +47,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
-
+      {isMobile ? null : <ComputersCanvas />}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

@@ -1,4 +1,4 @@
-import { useState, useRef, FormEvent } from "react"
+import { useState, useRef, FormEvent, useEffect } from "react"
 import { motion } from "framer-motion"
 
 import { toast } from "react-toastify"
@@ -22,6 +22,7 @@ const Contact = () => {
     email: "",
     message: "",
   } as ContactFormProps)
+  const [isMobile, setIsMobile] = useState(false)
   const [loading, setLoading] = useState(false)
 
   const formRef = useRef(null)
@@ -74,6 +75,22 @@ const Contact = () => {
         }
       )
   }
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)")
+
+    setIsMobile(mediaQuery.matches)
+
+    const handleMediaQueryChange = (e: any) => {
+      setIsMobile(e.matches)
+    }
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange)
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange)
+    }
+  }, [])
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -136,12 +153,14 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-        variants={slideIn("right", "tween", 0.2, 1)}
-      >
-        <EarthCanvas />
-      </motion.div>
+      {isMobile ? null : (
+        <motion.div
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+          variants={slideIn("right", "tween", 0.2, 1)}
+        >
+          <EarthCanvas />
+        </motion.div>
+      )}
     </div>
   )
 }
