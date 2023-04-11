@@ -1,4 +1,4 @@
-import { useState, useRef, Suspense } from "react"
+import { useState, useRef, Suspense, useEffect } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 
 import { Points, PointMaterial, Preload } from "@react-three/drei"
@@ -32,16 +32,37 @@ const Stars = (props: any) => {
 }
 
 const StarsCanvas = () => {
-  return (
-    <div className="w-full h-full absolute inset-0 z-[-1]">
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <Suspense fallback={null}>
-          <Stars />
-        </Suspense>
+  const [isMobile, setIsMobile] = useState(false)
 
-        <Preload all />
-      </Canvas>
-    </div>
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)")
+
+    setIsMobile(mediaQuery.matches)
+
+    const handleMediaQueryChange = (e: any) => {
+      setIsMobile(e.matches)
+    }
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange)
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange)
+    }
+  }, [])
+  return (
+    <>
+      {isMobile ? null : (
+        <div className="w-full h-full absolute inset-0 z-[-1]">
+          <Canvas camera={{ position: [0, 0, 1] }}>
+            <Suspense fallback={null}>
+              <Stars />
+            </Suspense>
+
+            <Preload all />
+          </Canvas>
+        </div>
+      )}
+    </>
   )
 }
 
