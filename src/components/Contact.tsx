@@ -9,12 +9,7 @@ import { styles } from "../style"
 import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
 import { slideIn } from "../utils/motion"
-
-type ContactFormProps = {
-  name: string
-  email: string
-  message: string
-}
+import { ContactFormProps } from "../@types/contact"
 
 const Contact = () => {
   const [form, setForm] = useState({

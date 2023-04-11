@@ -7,12 +7,7 @@ import { services } from "../constants"
 
 import { fadeIn, textVariant } from "../utils/motion"
 import { SectionWrapper } from "../hoc"
-
-type ServiceCardProps = {
-  index: number
-  title: string
-  icon: string
-}
+import { ServiceCardProps } from "../@types/about"
 
 const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
   return (

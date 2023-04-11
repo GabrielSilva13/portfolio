@@ -6,20 +6,7 @@ import { github, link } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { fadeIn, textVariant } from "../utils/motion"
 import { projects } from "../constants"
-
-type TagsProps = {
-  name: string
-  color: string
-}
-
-type ProjectCardProps = {
-  index: number
-  name: string
-  description: string
-  tags: TagsProps[]
-  image: string
-  source_code_link: string
-}
+import { ProjectCardProps } from "../@types/works"
 
 const ProjectCard = ({
   index,

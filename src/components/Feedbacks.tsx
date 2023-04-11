@@ -5,15 +5,7 @@ import { SectionWrapper } from "../hoc"
 import { fadeIn, textVariant } from "../utils/motion"
 
 import { testimonials } from "../constants"
-
-type FeedbackCardProps = {
-  testimonial: string
-  name: string
-  designation: string
-  company: string
-  image: string
-  index: number
-}
+import { FeedbackCardProps } from "../@types/feedbacks"
 
 const FeedbackCard = ({
   testimonial,
