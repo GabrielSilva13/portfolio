@@ -147,7 +147,7 @@ const experiences = [
     company_name: "Gramleft",
     icon: gramleft,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Presente",
+    date: "Jan 2023 - Mar 2023",
     points: [
       "Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.",
       "Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.",
