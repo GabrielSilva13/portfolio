@@ -4,8 +4,11 @@ import { motion } from 'framer-motion'
 import { SectionWrapper } from '@/hoc/SectionWrapper'
 import { textVariant } from '@/utils/motion'
 import { ExperienceCardWrapper } from './ExperienceCardWrapper'
+import useIsMobile from '@/hooks/useIsMobile'
+import { ExperienceCardWrapperMobile } from './ExperienceCardWrapperMobile'
 
 const Experience = () => {
+  const isMobile = useIsMobile({ screenWidth: '500' })
   return (
     <div className="py-10 sm:py-16">
       <motion.div variants={textVariant({})}>
@@ -16,7 +19,8 @@ const Experience = () => {
           Lugares que trabalhei.
         </h2>
       </motion.div>
-      <ExperienceCardWrapper />
+
+      {isMobile ? <ExperienceCardWrapperMobile /> : <ExperienceCardWrapper />}
     </div>
   )
 }

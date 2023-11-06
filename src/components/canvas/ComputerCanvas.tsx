@@ -12,22 +12,26 @@ export const ComputerCanvas = () => {
   const isMobile = useIsMobile({ screenWidth: '500' })
 
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<Loader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computer isMobile={isMobile} />
-      </Suspense>
+    <>
+      {isMobile ? null : (
+        <Canvas
+          frameloop="demand"
+          shadows
+          camera={{ position: [20, 3, 5], fov: 25 }}
+          gl={{ preserveDrawingBuffer: true }}
+        >
+          <Suspense fallback={<Loader />}>
+            <OrbitControls
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+            />
+            <Computer isMobile={isMobile} />
+          </Suspense>
 
-      <Preload all />
-    </Canvas>
+          <Preload all />
+        </Canvas>
+      )}
+    </>
   )
 }

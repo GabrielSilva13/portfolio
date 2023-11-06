@@ -12,6 +12,7 @@ export const ServiceCardsWrapper = () => {
     <div className="mt-20 flex flex-wrap gap-10">
       {services.map((service, index) => (
         <motion.div
+          className="w-full"
           key={service.title}
           variants={fadeIn({
             direction: 'right',
