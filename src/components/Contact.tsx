@@ -143,7 +143,7 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
-        className="h-[350px] md:h-[550px] xl:h-auto xl:flex-1"
+        className="hidden h-[350px] xs:flex md:h-[550px] xl:h-auto xl:flex-1"
         variants={slideIn({
           direction: 'right',
           type: 'tween',
