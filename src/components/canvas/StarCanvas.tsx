@@ -7,7 +7,7 @@ import { Stars } from './Stars'
 
 export const StarCanvas = () => {
   return (
-    <div className="absolute inset-0 z-[-1] h-auto w-full">
+    <div className="absolute inset-0 z-[-1] hidden h-auto w-full xs:block">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
