@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 import { slideIn } from '@/utils/motion'
 import { EarthCanvas } from './canvas/EarthCanvas'
+import Swal from 'sweetalert2'
 
 type FormProps = {
   name: string
@@ -46,8 +47,11 @@ const Contact = () => {
       .then(
         () => {
           setIsLoading(false)
-          // Colocar toast
-          alert('Mensagem enviada com sucesso!')
+          Swal.fire({
+            title: 'Obrigado 😊!',
+            text: 'Entrarei em contato o mais breve possível!',
+            icon: 'success',
+          })
           setForm({
             email: '',
             name: '',
@@ -56,6 +60,11 @@ const Contact = () => {
         },
         (error: unknown) => {
           setIsLoading(false)
+          Swal.fire({
+            title: 'Ou não 😢!',
+            text: 'Algo deu errado, tente novamente mais tarde!',
+            icon: 'error',
+          })
           console.log(error)
         },
       )
