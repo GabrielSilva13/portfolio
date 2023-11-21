@@ -276,6 +276,27 @@ const projects = [
     image: gramleft,
     source_code_link: 'https://gramleft.com.br/',
   },
+    {
+    name: 'ThreeJS',
+    description:
+      'Aqui você consegue personalizar sua camiseta em tempo real com cores e estampa e baixar a camiseta que montou para compartilhar com seus amigos.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'restapi',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: threejs,
+    source_code_link: 'https://three-js-three-mu.vercel.app/,
+  },
   {
     name: 'DT Money',
     description:
