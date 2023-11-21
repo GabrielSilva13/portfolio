@@ -280,7 +280,7 @@ const projects = [
     {
     name: 'ThreeJS',
     description:
-      'Aqui você consegue personalizar sua camiseta em tempo real com cores e estampa e baixar a camiseta que montou para compartilhar com seus amigos.',
+      'Aqui você consegue personalizar sua camiseta em tempo real como cores e estampa e baixar a camiseta que montou para compartilhar com seus amigos.',
     tags: [
       {
         name: 'react',
