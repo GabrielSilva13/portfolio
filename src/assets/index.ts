@@ -28,7 +28,7 @@ import avatar from './avatar.png'
 import rafa from './rafael.webp'
 import hervesson from './hervesson-porto.webp'
 import bestApp from './bestapp.webp'
-
+import threejs from './threejs.webp'
 import podcastr from './podcastr.webp'
 import noar from './noar.webp'
 import gramleft from './gramleft.webp'
@@ -69,4 +69,5 @@ export {
   hervesson,
   bestApp,
   avatar,
+  threejs
 }
