@@ -28,6 +28,7 @@ import {
   bestApp,
   gramleftCompany,
   avatar,
+  threejs,
 } from '../assets'
 
 export const navLinks = [
