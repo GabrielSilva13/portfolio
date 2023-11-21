@@ -56,4 +56,4 @@ const Works = () => {
   )
 }
 
-export const WorksSection = SectionWrapper({ Component: Works, idName: '' })
+export const WorksSection = SectionWrapper({ Component: Works, idName: 'work' })
