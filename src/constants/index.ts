@@ -277,7 +277,7 @@ const projects = [
     image: gramleft,
     source_code_link: 'https://gramleft.com.br/',
   },
-    {
+  {
     name: 'ThreeJS',
     description:
       'Aqui você consegue personalizar sua camiseta em tempo real como cores e estampa e baixar a camiseta que montou para compartilhar com seus amigos.',
