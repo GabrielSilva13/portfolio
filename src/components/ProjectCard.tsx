@@ -21,7 +21,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   source_code_link,
   tags,
 }) => {
-  const haveLivePreview = name === 'Noar Cloud' || name === 'Gramleft' || name === 'ThreeJS'
+   const haveLivePreview =
+    name === 'Noar Cloud' || name === 'Gramleft' || name === 'ThreeJS'
 
   return (
     <Tilt
