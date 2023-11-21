@@ -296,7 +296,7 @@ const projects = [
       },
     ],
     image: threejsProject,
-    source_code_link: 'https://three-js-three-mu.vercel.app/,
+    source_code_link: 'https://three-js-three-mu.vercel.app/',
   },
   {
     name: 'DT Money',
