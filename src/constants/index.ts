@@ -28,7 +28,7 @@ import {
   bestApp,
   gramleftCompany,
   avatar,
-  threejs,
+  threejsProject,
 } from '../assets'
 
 export const navLinks = [
@@ -295,7 +295,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: threejs,
+    image: threejsProject,
     source_code_link: 'https://three-js-three-mu.vercel.app/,
   },
   {
