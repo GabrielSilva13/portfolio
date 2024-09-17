@@ -1,6 +1,5 @@
 'use client'
 
-/* eslint-disable camelcase */
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -9,7 +8,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import Image from 'next/image'
 import { experiences } from '@/constants'
 import { motion } from 'framer-motion'
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import type { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import { fadeIn } from '@/utils/motion'
 
 type ExperienceCardProps = {
@@ -85,7 +84,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
             className="pl-1 text-sm tracking-wider text-white-100"
-            key={`experience-point-${index}`}
+            key={`experience-point-${index + 1}`}
           >
             {`${point}`}
           </motion.li>

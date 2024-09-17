@@ -122,7 +122,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
+    title: 'Front-end Developer',
     company_name: 'E-book Marketing',
     icon: ebook,
     iconBg: '#383E56',
@@ -135,7 +135,7 @@ const experiences = [
     ],
   },
   {
-    title: 'React.js Developer',
+    title: 'Front-end Developer',
     company_name: 'Noar Cloud',
     icon: noarCompany,
     iconBg: '#2D80F2',
@@ -149,11 +149,25 @@ const experiences = [
   },
 
   {
-    title: 'React.js Developer',
+    title: 'Front-end Developer',
     company_name: 'Gramleft',
     icon: gramleftCompany,
     iconBg: '#E6DEDD',
     date: 'Jan 2023 - Mar 2023',
+    points: [
+      'Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.',
+      'Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.',
+      'Implementando design responsivo e garantindo compatibilidade entre navegadores.',
+      'Participando de revisões de código e fornecer feedback construtivo a outros desenvolvedores.',
+    ],
+  },
+
+  {
+    title: 'Front-end Developer',
+    company_name: 'BudgetXpert',
+    icon: '',
+    iconBg: '#E6DEDD',
+    date: 'Jan 2024 - Set 2024',
     points: [
       'Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.',
       'Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.',
