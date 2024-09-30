@@ -10,6 +10,7 @@ import { experiences } from '@/constants'
 import { motion } from 'framer-motion'
 import type { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import { fadeIn } from '@/utils/motion'
+import { useAvatar } from '@/hooks/useAvatar'
 
 type ExperienceCardProps = {
   title: string
@@ -28,6 +29,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   iconBg,
   points,
 }) => {
+  const { initials, backgroundColor } = useAvatar(company_name)
+
   return (
     <VerticalTimelineElement
       contentArrowStyle={{
@@ -42,11 +45,22 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       iconStyle={{ background: iconBg, visibility: 'visible' }}
       icon={
         <div className="visible flex h-full w-full items-center justify-center ">
-          <Image
-            className="h-[60%] w-[60%] object-contain"
-            src={icon}
-            alt={company_name}
-          />
+          {icon !== '' ? (
+            <Image
+              className="h-[60%] w-[60%] object-contain"
+              src={icon}
+              alt={company_name}
+            />
+          ) : (
+            <div
+              className="w-full h-full rounded-full flex items-center justify-center"
+              style={{
+                backgroundColor: backgroundColor,
+              }}
+            >
+              <span className="text-sm font-medium text-white">{initials}</span>
+            </div>
+          )}
         </div>
       }
     >

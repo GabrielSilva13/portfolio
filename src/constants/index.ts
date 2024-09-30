@@ -29,310 +29,340 @@ import {
   gramleftCompany,
   avatar,
   threejsProject,
-} from '../assets'
+} from "../assets";
 
 export const navLinks = [
   {
-    id: 'about',
-    title: 'Sobre',
+    id: "about",
+    title: "Sobre",
   },
   {
-    id: 'work',
-    title: 'Trabalhos',
+    id: "work",
+    title: "Trabalhos",
   },
   {
-    id: 'contact',
-    title: 'Contato',
+    id: "contact",
+    title: "Contato",
   },
-]
+];
 
 const services = [
   {
-    title: 'Web Developer',
+    title: "Web Developer",
     icon: web,
   },
   {
-    title: 'Aplicações Responsivas',
+    title: "Aplicações Responsivas",
     icon: mobile,
   },
   {
-    title: 'Consumo de APIs',
+    title: "Consumo de APIs",
     icon: backend,
   },
   {
-    title: 'PJ flexível',
+    title: "PJ flexível",
     icon: creator,
   },
-]
+];
 
 const technologies = [
   {
-    name: 'HTML 5',
+    name: "HTML 5",
     icon: html,
   },
   {
-    name: 'CSS 3',
+    name: "CSS 3",
     icon: css,
   },
   {
-    name: 'JavaScript',
+    name: "JavaScript",
     icon: javascript,
   },
   {
-    name: 'TypeScript',
+    name: "TypeScript",
     icon: typescript,
   },
   {
-    name: 'React JS',
+    name: "React JS",
     icon: reactjs,
   },
   {
-    name: 'Next JS',
+    name: "Next JS",
     icon: nextjs,
   },
   {
-    name: 'Redux Toolkit',
+    name: "Redux Toolkit",
     icon: redux,
   },
   {
-    name: 'Tailwind CSS',
+    name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: 'Node JS',
+    name: "Node JS",
     icon: nodejs,
   },
   {
-    name: 'MongoDB',
+    name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: 'Three JS',
+    name: "Three JS",
     icon: threejs,
   },
   {
-    name: 'git',
+    name: "git",
     icon: git,
   },
   {
-    name: 'figma',
+    name: "figma",
     icon: figma,
   },
-]
+];
 
 const experiences = [
   {
-    title: 'Front-end Developer',
-    company_name: 'E-book Marketing',
+    title: "Front-end Developer",
+    company_name: "E-book Marketing",
     icon: ebook,
-    iconBg: '#383E56',
-    date: 'Novembro 2022 - Novembro 2022',
+    iconBg: "#383E56",
+    date: "Novembro 2022 - Novembro 2022",
     points: [
-      'Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.',
-      'Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.',
-      'Implementando design responsivo e garantindo compatibilidade entre navegadores.',
-      'Participando de revisões de código e fornecer feedback construtivo a outros desenvolvedores.',
+      "Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.",
+      "Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.",
+      "Implementando design responsivo e garantindo compatibilidade entre navegadores.",
+      "Participando de revisões de código e fornecer feedback construtivo a outros desenvolvedores.",
     ],
   },
   {
-    title: 'Front-end Developer',
-    company_name: 'Noar Cloud',
+    title: "Front-end Developer",
+    company_name: "Noar Cloud",
     icon: noarCompany,
-    iconBg: '#2D80F2',
-    date: 'Junho 2022 - Março 2023',
+    iconBg: "#2D80F2",
+    date: "Junho 2022 - Março 2023",
     points: [
-      'Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.',
-      'Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.',
-      'Implementando design responsivo e garantindo compatibilidade entre navegadores.',
-      'Participando de revisões de código e fornecer feedback construtivo a outros desenvolvedores.',
+      "Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.",
+      "Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.",
+      "Implementando design responsivo e garantindo compatibilidade entre navegadores.",
+      "Participando de revisões de código e fornecer feedback construtivo a outros desenvolvedores.",
     ],
   },
 
   {
-    title: 'Front-end Developer',
-    company_name: 'Gramleft',
+    title: "Front-end Developer",
+    company_name: "Gramleft",
     icon: gramleftCompany,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Mar 2023',
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Mar 2023",
     points: [
-      'Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.',
-      'Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.',
-      'Implementando design responsivo e garantindo compatibilidade entre navegadores.',
-      'Participando de revisões de código e fornecer feedback construtivo a outros desenvolvedores.',
+      "Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.",
+      "Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.",
+      "Implementando design responsivo e garantindo compatibilidade entre navegadores.",
+      "Participando de revisões de código e fornecer feedback construtivo a outros desenvolvedores.",
     ],
   },
 
   {
-    title: 'Front-end Developer',
-    company_name: 'BudgetXpert',
-    icon: '',
-    iconBg: '#E6DEDD',
-    date: 'Jan 2024 - Set 2024',
+    title: "Front-end Developer",
+    company_name: "Budget Xpert",
+    icon: "",
+    iconBg: "#E6DEDD",
+    date: "Jan 2024 - Set 2024",
     points: [
-      'Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.',
-      'Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.',
-      'Implementando design responsivo e garantindo compatibilidade entre navegadores.',
-      'Participando de revisões de código e fornecer feedback construtivo a outros desenvolvedores.',
+      "Desenvolvimento e manutenção de aplicações web usando React.js e outras tecnologias relacionadas.",
+      "Colaborar com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores para criar produtos de alta qualidade.",
+      "Implementando design responsivo e garantindo compatibilidade entre navegadores.",
+      "Participando de revisões de código e fornecer feedback construtivo a outros desenvolvedores.",
     ],
   },
-]
+];
 
 const testimonials = [
   {
     testimonial:
-      'Sem dúvidas um ótimo profissional! Cumpre todos os prazos e é bem detalhista. Recomendo demais.',
-    name: 'Rafael Tavares',
-    designation: 'CFO',
-    company: 'na Noar Cloud',
+      "Sem dúvidas um ótimo profissional! Cumpre todos os prazos e é bem detalhista. Recomendo demais.",
+    name: "Rafael Tavares",
+    designation: "CFO",
+    company: "na Noar Cloud",
     image: rafa,
   },
   {
     testimonial:
-      'Perfeito o serviço cara, não tenho do que reclamar mesmo, era isso mesmo que eu queria.',
-    name: 'Mauricio Lohder',
-    designation: 'COO',
-    company: 'na Gramleft',
+      "Perfeito o serviço cara, não tenho do que reclamar mesmo, era isso mesmo que eu queria.",
+    name: "Mauricio Lohder",
+    designation: "COO",
+    company: "na Gramleft",
     image: mauricio,
   },
   {
-    testimonial: 'Muito bom e não mediu esforços para entregar no prazo!',
-    name: 'Hervesson Porto',
-    designation: 'Cliente',
-    company: 'no 99 freelas',
+    testimonial: "Muito bom e não mediu esforços para entregar no prazo!",
+    name: "Hervesson Porto",
+    designation: "Cliente",
+    company: "no 99 freelas",
     image: hervesson,
   },
   {
     testimonial:
-      'Atencioso, entende muito de frontend e fez até além do necessário para o job. Recomendo com toda certeza',
-    name: 'BestApp',
-    designation: 'Cliente',
-    company: 'no 99 freelas',
+      "Atencioso, entende muito de frontend e fez até além do necessário para o job. Recomendo com toda certeza",
+    name: "BestApp",
+    designation: "Cliente",
+    company: "no 99 freelas",
     image: bestApp,
   },
   {
     testimonial:
-      'Muito comunicativo, prestativo e desejo um futuro brilhante pela frente. Obrigado por todo empenho e dedicação, ficou muito bom, espero poder contar com você mais vezes.',
-    name: 'Veuc Digital',
-    designation: 'Cliente',
-    company: 'no 99 freelas',
-    image: avatar,
+      "Muito comunicativo, prestativo e desejo um futuro brilhante pela frente. Obrigado por todo empenho e dedicação, ficou muito bom, espero poder contar com você mais vezes.",
+    name: "Veuc Digital",
+    designation: "Cliente",
+    company: "no 99 freelas",
+    image: null,
   },
   {
     testimonial:
-      'Entrega no prazo, faz os ajustes necessários, recomendo o trabalho do Gabriel.',
-    name: 'Isabelle Oliveira',
-    designation: 'Cliente',
-    company: 'no 99 freelas',
-    image: avatar,
+      "Entrega no prazo, faz os ajustes necessários, recomendo o trabalho do Gabriel.",
+    name: "Isabelle Oliveira",
+    designation: "Cliente",
+    company: "no 99 freelas",
+    image: null,
   },
-]
+  {
+    testimonial: "Excelente trabalho. Boa abordagem técnica e organização.",
+    name: "Frederico Gaede",
+    designation: "Cliente",
+    company: "no 99 freelas",
+    image: null,
+  },
+  {
+    testimonial: "Tudo certo",
+    name: "Gladstone Gimenis",
+    designation: "Cliente",
+    company: "no 99 freelas",
+    image: null,
+  },
+  {
+    testimonial:
+      "Boa comunicação, engraçado e muito profissional. Entregou tudo que foi pedido em tempo recorde",
+    name: "Jaqueline Gonzaga",
+    designation: "Cliente",
+    company: "no 99 freelas",
+    image: null,
+  },
+  {
+    testimonial:
+      "Gabriel has truly impressed me. He is professional, efficient, and meticulous, with excellent communication throughout the project. I will definitely hire him again for future projects. Thank you so much!",
+    name: "Martine Midttveit",
+    designation: "Cliente",
+    company: "no 99 freelas",
+    image: null,
+  },
+];
 
 const projects = [
   {
-    name: 'Podcastr',
+    name: "Podcastr",
     description:
-      'Um projeto de um podcast, simples e intuitivo para escutar os seus podcasts preferidos, aonde temos artistas, dia postado, recentes e o player.',
+      "Um projeto de um podcast, simples e intuitivo para escutar os seus podcasts preferidos, aonde temos artistas, dia postado, recentes e o player.",
     tags: [
       {
-        name: 'next',
-        color: 'blue-text-gradient',
+        name: "next",
+        color: "blue-text-gradient",
       },
       {
-        name: 'css',
-        color: 'pink-text-gradient',
+        name: "css",
+        color: "pink-text-gradient",
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: "restapi",
+        color: "green-text-gradient",
       },
     ],
     image: podcastr,
-    source_code_link: 'https://github.com/GabrielSilva13/Podcastr',
+    source_code_link: "https://github.com/GabrielSilva13/Podcastr",
   },
   {
-    name: 'Noar Cloud',
+    name: "Noar Cloud",
     description:
-      'Um sistema web com tecnologia cloud para usar computadores na nuvem, comprando horas avulsas ou planos e podendo assim usar um computador remoto.',
+      "Um sistema web com tecnologia cloud para usar computadores na nuvem, comprando horas avulsas ou planos e podendo assim usar um computador remoto.",
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
+        name: "react",
+        color: "blue-text-gradient",
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: "restapi",
+        color: "green-text-gradient",
       },
       {
-        name: 'scss',
-        color: 'pink-text-gradient',
+        name: "scss",
+        color: "pink-text-gradient",
       },
     ],
     image: noar,
-    source_code_link: 'https://www.noarcloud.com/',
+    source_code_link: "https://www.noarcloud.com/",
   },
   {
-    name: 'Gramleft',
+    name: "Gramleft",
     description:
-      'Sistema web para uso de um bot para gerenciar seus canais no telegram e cobrar assinaturas de forma automática.',
+      "Sistema web para uso de um bot para gerenciar seus canais no telegram e cobrar assinaturas de forma automática.",
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
+        name: "react",
+        color: "blue-text-gradient",
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: "restapi",
+        color: "green-text-gradient",
       },
       {
-        name: 'css',
-        color: 'pink-text-gradient',
+        name: "css",
+        color: "pink-text-gradient",
       },
     ],
     image: gramleft,
-    source_code_link: 'https://gramleft.com.br/',
+    source_code_link: "https://gramleft.com.br/",
   },
   {
-    name: 'ThreeJS',
+    name: "ThreeJS",
     description:
-      'Aqui você consegue personalizar sua camiseta em tempo real como cores e estampa e baixar a camiseta que montou para compartilhar com seus amigos.',
+      "Aqui você consegue personalizar sua camiseta em tempo real como cores e estampa e baixar a camiseta que montou para compartilhar com seus amigos.",
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
+        name: "react",
+        color: "blue-text-gradient",
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: "restapi",
+        color: "green-text-gradient",
       },
       {
-        name: 'css',
-        color: 'pink-text-gradient',
+        name: "css",
+        color: "pink-text-gradient",
       },
     ],
     image: threejsProject,
-    source_code_link: 'https://three-js-three-mu.vercel.app/',
+    source_code_link: "https://three-js-three-mu.vercel.app/",
   },
   {
-    name: 'DT Money',
+    name: "DT Money",
     description:
-      'Aqui nós temos um sistema financeiro aonde calcula e monitora todas as entradas e saídas do seu dinheiro e deixa registrado para se ter um melhor controle financeiro.',
+      "Aqui nós temos um sistema financeiro aonde calcula e monitora todas as entradas e saídas do seu dinheiro e deixa registrado para se ter um melhor controle financeiro.",
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
+        name: "react",
+        color: "blue-text-gradient",
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: "restapi",
+        color: "green-text-gradient",
       },
       {
-        name: 'scss',
-        color: 'pink-text-gradient',
+        name: "scss",
+        color: "pink-text-gradient",
       },
     ],
     image: dtmoney,
-    source_code_link: 'https://github.com/GabrielSilva13/DT-Money',
+    source_code_link: "https://github.com/GabrielSilva13/DT-Money",
   },
-]
+];
 
-export { services, technologies, experiences, testimonials, projects }
+export { services, technologies, experiences, testimonials, projects };
