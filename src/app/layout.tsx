@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   title: 'Gabriel | Portfolio',
   description:
-    'Sou Gabriel Gonçalves, desenvolvedor front-end com 2 anos de experiência, tenho experiência em desenvolver sites, sistemas web, landing pages, páginas de vendas, para saber mais entre em contato 😊',
+    'Sou Gabriel Gonçalves, desenvolvedor front-end com 4 anos de experiência, tenho experiência em desenvolver sites, sistemas web, landing pages, páginas de vendas, para saber mais entre em contato 😊',
 }
 
 export default function RootLayout({
